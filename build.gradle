@@ -14,13 +14,11 @@ tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
 
+tasks.create("stage") {
+    dependsOn("installDist")
 
 }
-jar {
-    manifest {
-    attributes 'Main-Class': 'ru.vkbot.Bot'
-    }
-}
+
 
 
 
