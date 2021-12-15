@@ -18,7 +18,11 @@ tasks.create("stage") {
     dependsOn("installDist")
 
 }
-
+jar {
+    manifest {
+    attributes 'Main-Class': 'ru.vkbot.Bot'
+    }
+}
 
 
 
