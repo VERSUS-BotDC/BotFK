@@ -2,7 +2,7 @@ plugins {
     id 'java'
     id 'application'
 //    id 'com.vk.api' version '1.0.11'
-    id 'com.github.johnrengelman.shadow' version '2.0.4'
+//    id 'com.github.johnrengelman.shadow' version '2.0.4'
     id 'distribution'
 }
 
@@ -52,8 +52,4 @@ test {
     useJUnitPlatform()
 }
 
-shadowJar {
-    mergeServiceFiles()
-    exclude 'META-INF/*.DSA'
-    exclude 'META-INF/*.RSA'
-}
+
